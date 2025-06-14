@@ -4,9 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>C:/Mis Proyectos/Librerias_XC8.X/Display/LCD_16x2.X/CFG_LCD_16x2.h</itemPath>
-      <itemPath>C:/Mis Proyectos/Librerias_XC8.X/I2C/I2C.X/CFG_I2C.h</itemPath>
       <itemPath>CFG_16F877A.h</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/Display/LCD_16x2.X/CFG_LCD_16x2.h</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/DS1307/DS1307.X/CFG_DS1307.h</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/I2C/I2C.X/CFG_I2C.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -20,9 +21,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>C:/Mis Proyectos/Librerias_XC8.X/Display/LCD_16x2.X/LCD_16x2.c</itemPath>
-      <itemPath>C:/Mis Proyectos/Librerias_XC8.X/I2C/I2C.X/I2C.c</itemPath>
       <itemPath>RELOJ_LCD_16x2_MAIN.c</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/I2C/I2C.X/I2C.c</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/DS1307/DS1307.X/DS1307.c</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/Display/LCD_16x2.X/LCD_16x2.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -30,6 +32,9 @@
     <Elem>C:/Mis Proyectos/Librerias_XC8.X/Display/LCD_16x2.X</Elem>
     <Elem>C:/Mis Proyectos/Librerias_XC8.X/I2C/I2C.X</Elem>
     <Elem>C:/Mis Proyectos/Librerias_XC8.X/DS1307/DS1307.X</Elem>
+    <Elem>C:/Mis Proyectos/Librerias/Display/LCD_16x2.X</Elem>
+    <Elem>C:/Mis Proyectos/Librerias/DS1307/DS1307.X</Elem>
+    <Elem>C:/Mis Proyectos/Librerias/I2C/I2C.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

@@ -23,8 +23,9 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "../RELOJ_LCD_16x2.X/dist/../debug/../../../Librerias_XC8.X/Display/LCD_16x2.X/CFG_LCD_16x2.h"
-#include "../../Librerias_XC8.X/I2C/I2C.X/CFG_I2C.h"
+#include "../../Librerias/Display/LCD_16x2.X/CFG_LCD_16x2.h"
+#include "../Altium/../../Librerias/I2C/I2C.X/CFG_I2C.h"
+#include "../../Librerias/DS1307/DS1307.X/CFG_DS1307.h"
 
 #define SEL_OK          PORTBbits.RB4                                           //Tecla OK 
 #define DEC_2           PORTBbits.RB3                                           //Tecla hacia decremento
