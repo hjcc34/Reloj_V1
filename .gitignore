@@ -1,0 +1,185 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+### para proteus
+
+# Archivos de respaldo
+*.bak
+*.~*
+
+# Archivos temporales y de simulación
+*.tmp
+*.err
+*.elf
+*.hex
+*.cof
+*.log
+*.dsn$
+*.dsi
+*.pwi
+*.ini
+*.swp
+*.sdf
+
+# Archivos de salida del simulador
+*.sdf
+*.pdsbak
+*.vpd
+*.pdo
+
+# Archivos de trabajo y estado del proyecto
+*.set
+*.res
+*.db
+*.lst
+
+# Archivos generados por microcontroladores o compiladores
+*.map
+*.cod
+*.o
+*.a
+*.p1
+*.asm
+*.pre
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+Backup Of RELOJ DIGITAL LCD 20 X 4.pdsbak
+Last Loaded RELOJ DIGITAL LCD 20 X 4.pdsbak
+RELOJ DIGITAL LCD 20 X 4.pdsprj.FamiliaCS-PC.Familia CS.workspace
+RELOJ DIGITAL LCD 20 X 4.pdsprj.FamiliaCS-PC.Familia CS.workspace.xml
+
+### Para MPLABX
+
+# Archivos generados por MPLAB X IDE
+RELOJ_LCD_16x2.X/nbproject/private/
+RELOJ_LCD_16x2.X/nbproject/
+RELOJ_LCD_16x2.X/dist/
+RELOJ_LCD_16x2.X/build/
+RELOJ_LCD_16x2.X/.ca/
+RELOJ_LCD_16x2.X/debug/
+
+# Archivos de proyecto específicos del usuario
+*.X/*.d
+*.X/*.o
+*.X/*.elf
+*.X/*.hex
+*.X/*.map
+*.X/*.sdb
+*.X/*.p1
+*.X/*.pre
+*.X/*.as
+
+# Archivos temporales del sistema
+*.log
+*.tmp
+*~
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+
+### para altium
+
+# Carpetas temporales
+Altium/Reloj Digital/__Previews/
+Altium/Reloj Digital/History/
+Altium/Reloj Digital Down/__Previews/
+Altium/Reloj Digital Down/History/
+Altium/Reloj Digital Down/Project Logs for Reloj Digital Down/
+Altium/Reloj Digital Front/__Previews/
+Altium/Reloj Digital Front/History/
+Altium/Reloj Digital Down/Project Logs for Reloj Digital/
+Altium/Reloj Digital Down/Project Logs for Reloj Digital Front/
+
+# Archivos generados y de salida
+*.OutJob
+*.DRC
+*.RUL
+*.LOG
+*.REP
+*.MMP
+*.PRJPCBSTRUCT
+*.PcbDocPreview
+*.SchDocPreview
+*.PCBDOCOUTPUTS
+*.DesignCache
+*.vshost.*
+
+# Backups y temporales
+*.bak
+*.tmp
+*~
+*.swp
+*.db
+
+# Archivos de simulación
+*.sim
+*.cache
+*.bin
+*.hex
+
+# Altium database links
+*.DbLink
+
+# Archivos específicos de usuario
+*.IntegratedLibrary
+*.xlt
+*.Dat
+
+# Archivos ocultos del sistema
+.DS_Store
+Thumbs.db
