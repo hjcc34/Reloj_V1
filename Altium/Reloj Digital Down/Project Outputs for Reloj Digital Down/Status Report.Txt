@@ -1,0 +1,10 @@
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of Project [Reloj Digital Down.PrjPcb]
+   Generated File[Pick Place for PCB Down.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 22:02:33 On 27/12/2024

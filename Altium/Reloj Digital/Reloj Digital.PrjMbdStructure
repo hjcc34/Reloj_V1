@@ -1,0 +1,4 @@
+Record=DiagramHierarchy|SourceDocument=Reloj Digital.MbsDoc|Kind=Multi-board Schematic Module|Designator=2|Source=..\Reloj Digital Down\Reloj Digital Down.PrjPcb
+Record=SubProject|SourceDocument=Reloj Digital.MbsDoc|ProjectPath=..\Reloj Digital Down\Reloj Digital Down.PrjPcb
+Record=DiagramHierarchy|SourceDocument=Reloj Digital.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\Reloj Digital Front\Reloj Digital Front.PrjPcb
+Record=SubProject|SourceDocument=Reloj Digital.MbsDoc|ProjectPath=..\Reloj Digital Front\Reloj Digital Front.PrjPcb

@@ -1,0 +1,10 @@
+Board Information Report
+Filename     : G:\Mi unidad\Mis Proyectos\Reloj Digital LCD 16 x 2\Altium\Reloj Digital Down\PCB Down.PcbDoc
+Date         : 30/12/2024
+Time         : 14:22:49
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 90mmx60mm
+    Components on board, 40
+count : 2

@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Reloj Digital Front.PrjPcb]
+   Generated File[PCB Front.TXT]
+   Generated File[PCB Front.LDP]
+   Generated File[PCB Front.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 21:48:22 On 02/01/2025

@@ -1,0 +1,53 @@
+Altium Designer Pick and Place Locations
+C:\Users\Familia CS\AppData\Local\Temp\Releases\Snapshot\1\Assembly\Pick Place\Pick Place for PCB Down.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       18/03/25
+Time:       22:51
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Center-X(mil) Center-Y(mil) Comment             Description                                                                                                                        Designator   Footprint                    Layer       Rotation 
+1720.000      1955.000      CL31B104KBCNFNC     "Cap Ceramic 100nF 50V X7R ±10% SMD 1206 +125°C Embossed T/R"                                                                      C15          FP-CL31-IPC_C                BottomLayer 270      
+2985.000      855.000       EEUHD1C101          "Aluminum Electrolytic Capacitors (Radial Lead Type) AEC-Q200 Qualified 100uF ±20% 16V"                                            C14          FP-RAD-TH-D_5_0_5-L_11_1-MFG TopLayer    90       
+2680.000      945.630       EEUHD1C101          "Aluminum Electrolytic Capacitors (Radial Lead Type) AEC-Q200 Qualified 100uF ±20% 16V"                                            C13          FP-RAD-TH-D_5_0_5-L_11_1-MFG TopLayer    90       
+177.165       1653.543      EEUHD1C101          "Aluminum Electrolytic Capacitors (Radial Lead Type) AEC-Q200 Qualified 100uF ±20% 16V"                                            C12          FP-RAD-TH-D_5_0_5-L_11_1-MFG TopLayer    180      
+2050.630      1805.000      EEUHD1C101          "Aluminum Electrolytic Capacitors (Radial Lead Type) AEC-Q200 Qualified 100uF ±20% 16V"                                            C11          FP-RAD-TH-D_5_0_5-L_11_1-MFG TopLayer    180      
+2762.874      1216.968      AB26TRB-32.768KHZ-T "CRYSTAL 32.7680KHZ 12.5PF TH"                                                                                                     Y2           FP-AB26TRB-MFG               TopLayer    180      
+1810.000      990.000       FOXSLF/120-20       "Resistance Weld Thru-Hole Crystal, 12 MHz, +/-30 ppm, -20 to 70 degC, 2-Pin THD, RoHS, Bulk"                                      Y1           FOX-FOXSLF-2_V               TopLayer    180      
+1771.653      530.905       67068-8011          "67068-8011 Conn USB 2.0 Type B RCP 4 POS 2.5mm Solder RA Thru-Hole 4 Terminal 1 Port USB 2.0 Tray"                                "VIN - 5vdc" FP-67068-8011-MFG            TopLayer    0        
+1811.024      1377.953      PIC16F877A-I/PT     "Enhanced FLASH Microcontroller, 8K (x14-Bit words) FLASH, 368 Bytes RAM, 44-Pin TQFP, Standard VDD Range, Industrial Temperature" U1           TQFP-PT44_M                  TopLayer    270      
+2145.000      1220.000      RC3216F472CS        "Res Thick Film 1206 4.7kO 1% 0.25W ±100ppm/°C Molded SMD T/R"                                                                     R8           FP-RC3216-MFG                BottomLayer 270      
+705.000       895.000       CRCW120610K0FKEA    "RES Thick Film, 10kO, 1%, 0.25W, 100ppm/°C, 1206"                                                                                 R7           FP-CRCW1206-e3-IPC_C         BottomLayer 270      
+825.000       300.000       CRCW120610K0FKEA    "RES Thick Film, 10kO, 1%, 0.25W, 100ppm/°C, 1206"                                                                                 R6           FP-CRCW1206-e3-IPC_C         BottomLayer 90       
+2480.000      1465.000      RC3216F472CS        "Res Thick Film 1206 4.7kO 1% 0.25W ±100ppm/°C Molded SMD T/R"                                                                     R5           FP-RC3216-MFG                BottomLayer 180      
+2480.000      1370.000      RC3216F472CS        "Res Thick Film 1206 4.7kO 1% 0.25W ±100ppm/°C Molded SMD T/R"                                                                     R4           FP-RC3216-MFG                BottomLayer 180      
+2255.000      1330.000      RC3216F472CS        "Res Thick Film 1206 4.7kO 1% 0.25W ±100ppm/°C Molded SMD T/R"                                                                     R3           FP-RC3216-MFG                BottomLayer 270      
+1318.898      610.236       RC3216F472CS        "Res Thick Film 1206 4.7kO 1% 0.25W ±100ppm/°C Molded SMD T/R"                                                                     R2           FP-RC3216-MFG                BottomLayer 180      
+275.591       1240.158      RC3216F472CS        "Res Thick Film 1206 4.7kO 1% 0.25W ±100ppm/°C Molded SMD T/R"                                                                     R1           FP-RC3216-MFG                BottomLayer 180      
+1355.472      1811.024      BC337-40RL1G        "Amplifier Transistor, NPN Silicon, 3-Pin TO-92, Pb-Free, Tape and Reel"                                                           Q1           ONSC-TO-92-3-29-11_AM_BL     TopLayer    0        
+826.772       944.882       61300511121         ""                                                                                                                                 ICSP         61300511121                  TopLayer    90       
+3188.976      1181.102      MTLW-104-05-G-S-185 "CONN HEADER VERT 4POS 2.54MM"                                                                                                     HC-06        FP-MTLW-104-05-G-S-185-MFG   TopLayer    90       
+2362.205      511.811       696106003002        ""                                                                                                                                 "FUSE 500mA" 696106003002                 TopLayer    270      
+2500.000      1320.000      DS1307+             "64 x 8, Serial, I2C Real-Time Clock, 5.0V, 8-Pin PDIP, 0 to 70 degC, Pb-Free"                                                     DS1307       P8+2                         TopLayer    180      
+137.795       1181.102      DHT11               "SENSOR DE TEMPERATURA"                                                                                                            DHT11        DHT11                        TopLayer    0        
+825.000       570.000       JAN1N4148UR-1       "DIODE GEN PURP 100V 200MA DO213"                                                                                                  D3           FP-DO-213AA-MFG              BottomLayer 270      
+2275.000      580.000       SMBJ5.0A            "TVS DIODE 5V 9.2V DO214AA"                                                                                                        D2           FP-SMBJ-MFG                  BottomLayer 270      
+2455.000      605.000       ES1D-M3/61T         "DIODE GEN PURP 200V 1A DO214AC"                                                                                                   D1           FP-SMA-MFG                   BottomLayer 270      
+1307.087      511.811       1775485-1           "BATT HLDR COIN 20MM 1 CEL PC PIN"                                                                                                 CR2032       FP-1775485-1-MFG             TopLayer    90       
+1771.653      2125.984      61202021621         ""                                                                                                                                 CN-PCB-FRONT 61202021621                  TopLayer    180      
+930.000       590.000       CL31B104KBCNFNC     "Cap Ceramic 100nF 50V X7R ±10% SMD 1206 +125°C Embossed T/R"                                                                      C10          FP-CL31-IPC_C                BottomLayer 90       
+3240.000      895.000       CL31B104KBCNFNC     "Cap Ceramic 100nF 50V X7R ±10% SMD 1206 +125°C Embossed T/R"                                                                      C9           FP-CL31-IPC_C                TopLayer    180      
+730.000       300.000       CL31B104KBCNFNC     "Cap Ceramic 100nF 50V X7R ±10% SMD 1206 +125°C Embossed T/R"                                                                      C8           FP-CL31-IPC_C                BottomLayer 90       
+2400.000      1050.000      CL31B104KBCNFNC     "Cap Ceramic 100nF 50V X7R ±10% SMD 1206 +125°C Embossed T/R"                                                                      C7           FP-CL31-IPC_C                TopLayer    180      
+1330.709      413.386       CL31B104KBCNFNC     "Cap Ceramic 100nF 50V X7R ±10% SMD 1206 +125°C Embossed T/R"                                                                      C6           FP-CL31-IPC_C                BottomLayer 0        
+263.779       1330.709      CL31B104KBCNFNC     "Cap Ceramic 100nF 50V X7R ±10% SMD 1206 +125°C Embossed T/R"                                                                      C5           FP-CL31-IPC_C                BottomLayer 180      
+2005.000      835.000       RCE5C2A150J0K1H03B  "Cap Ceramic 15pF 100V C0G ±5% Radial 5mm +125°C Automotive Bulk"                                                                  C4           FP-RCE0K1-MFG                TopLayer    0        
+1615.000      835.000       RCE5C2A150J0K1H03B  "Cap Ceramic 15pF 100V C0G ±5% Radial 5mm +125°C Automotive Bulk"                                                                  C3           FP-RCE0K1-MFG                TopLayer    180      
+1730.000      1710.000      CL31B104KBCNFNC     "Cap Ceramic 100nF 50V X7R ±10% SMD 1206 +125°C Embossed T/R"                                                                      C2           FP-CL31-IPC_C                TopLayer    0        
+2685.000      689.370       EEUHD1C101          "Aluminum Electrolytic Capacitors (Radial Lead Type) AEC-Q200 Qualified 100uF ±20% 16V"                                            C1           FP-RAD-TH-D_5_0_5-L_11_1-MFG TopLayer    90       
+900.000       2175.000      T93YB103KT20        "T93YB103KT20 Resistor Trimmer, Cermet, 10 kOhm, ± 10%, 500 mW, 23 Turn, Multi Turn, Through Hole"                                 "BRILLO LCD" FP-T93YB-MFG                 TopLayer    270      
+2540.000      1725.000      151031YS05900       ""                                                                                                                                 1Hz          WL-TMRC_D3.95H5.3            TopLayer    90       

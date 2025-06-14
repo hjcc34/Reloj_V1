@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Reloj Digital.PrjPcb]
+   Generated File[Reloj digital B.TXT]
+   Generated File[Reloj digital B.LDP]
+   Generated File[Reloj digital B.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 20:38:09 On 17/09/2023

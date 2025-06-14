@@ -1,0 +1,10 @@
+Board Information Report
+Filename     : G:\Mi unidad\Mis Proyectos\Reloj Digital LCD 16 x 4\Altium\Reloj Digital Front\PCB Front.PcbDoc
+Date         : 28/12/2024
+Time         : 17:05:48
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 99.9365mmx80mm
+    Components on board, 6
+count : 2

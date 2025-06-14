@@ -1,0 +1,33 @@
+IBIS Model Equivalence Table
+================================================
+
+
+General Equivalents
+--------------------
+For devices listed as pic18f1xk50 or similar, models cover all devices where x=[0-9].
+pic1xf  signifies 2.7-5.5V.
+pic1xlf signifies 1.8-3.6V.
+
+
+
+
+Specific Equivalents
+---------------------
+pic10f202   also cover pic10f200,pic10f204,pic10f206
+
+pic12f635   also cover pic12f636,pic12f639
+
+pic16f636   also cover pic16f635,pic16f639
+pic16f677   also cover pic16f631,pic16f685,pic16f687,pic16f689,pic16f690
+
+pic16f1825  also cover pic16f1824,pic16f1828,pic16f1829
+pic16f1827  also cover pic16f1826
+pic16f1936  also cover pic16f1934,pic16f1937
+
+pic16f18345 also cover pic16f18325
+
+
+
+
+
+/Lars Snith, Microchip, August 2020
