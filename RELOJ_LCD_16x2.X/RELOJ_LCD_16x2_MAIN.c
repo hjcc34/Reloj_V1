@@ -29,6 +29,8 @@ void main(void)
     Lcd_inicio_4bits();                                                         //Inicializar la LCD a 4bits
 //***************************Inicializar I2C************************************
     I2C_Initialize();
+//***********************Comunicacion y CFG DS1307******************************
+    CFG_DS1307();
 //*****************************Mensaje LCD inicio*******************************    
     Lcd_pos_x(6);                                                               //Ubicar la LCD en posicion 6 de la coordenada X    
     Lcd_Write_String("Reloj");                                                  //Escribir en la LCD "RELOJ"
