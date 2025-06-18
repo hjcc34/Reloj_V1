@@ -31,7 +31,7 @@ void main(void)
     I2C_Initialize();
 //***********************Comunicacion y CFG DS1307******************************
     I2C_Cmd(_Dir_DS1307_W,_Registro_Ctr,_Salida_1seg);                          //Configurar salida de 1seg el DS1307
-    I2C_P();                                                                    //Stop de I2C
+    I2C_Cmd(_Dir_DS1307_W,_Registro_Seg,0x01);                                  //Configurar salida de 1seg el DS1307   
 //*****************************Mensaje LCD inicio*******************************    
     Lcd_pos_x(6);                                                               //Ubicar la LCD en posicion 6 de la coordenada X    
     Lcd_Write_String("Reloj");                                                  //Escribir en la LCD "RELOJ"
