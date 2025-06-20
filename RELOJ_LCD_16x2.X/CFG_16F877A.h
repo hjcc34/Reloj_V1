@@ -33,9 +33,7 @@
 #define BEFORE_4        PORTBbits.RB1                                           //Tecla hacia izquierda
 #define NEXT_3          PORTBbits.RB0                                           //Tecla derecha
 
-#define DHT11           PORTBbits.RB5                                           //Dato de DHT11
-
 #define ALARMA          PORTCbits.RC2                                           //Salida alarma
-#define Led             PORTCbits.RC0                                           //Salida Leds
+#define Led             PORTDbits.RD0                                           //Salida Leds
 
 #endif	/* CFG16F877A_H */
