@@ -31,7 +31,15 @@ void main(void)
     I2C_Initialize();
 //***********************Comunicacion y CFG DS1307******************************
     I2C_Cmd(_Dir_DS1307_W,_Registro_Ctr,_Salida_1seg);                          //Configurar salida de 1seg el DS1307
-    I2C_Cmd(_Dir_DS1307_W,_Registro_Seg,0x01);                                  //Configurar salida de 1seg el DS1307   
+    I2C_Cmd(_Dir_DS1307_W,_Registro_Seg,0x01);                                  //Configurar salida de 1seg el DS1307
+//*********************Comunicacion y CFG BMP280********************************
+    I2C_Write(_bmp280_w,_bmp280_ID,_bmp280_r);
+    I2C_Read_8bits();
+    if (DATO_I2C_8bits == 0x58)
+    {
+    }
+    I2C_Cmd(_bmp280_w,_bmp280_reg_reset,_bmp280_reset);
+    I2C_Cmd(_bmp280_w,_bmp280_ctrl_mes,0x33);
 //*****************************Mensaje LCD inicio*******************************    
     Lcd_pos_x(6);                                                               //Ubicar la LCD en posicion 6 de la coordenada X    
     Lcd_Write_String("Reloj");                                                  //Escribir en la LCD "RELOJ"
