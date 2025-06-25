@@ -68,7 +68,7 @@ void main(void)
     __delay_ms(2);
     I2C_Cmd(_bmp280_w,_bmp280_ctrl_mes,_mode_sleep);
     I2C_Cmd(_bmp280_w,_bmp280_CFG,0x00);
-    I2C_Cmd(_bmp280_w,_bmp280_ctrl_mes,0x47);
+    I2C_Cmd(_bmp280_w,_bmp280_ctrl_mes,0x27);                                   //modo normal-presion_16bits-temperatura_16bits.
 //*************************Calibracion BMP280***********************************
     CALIBRATION_BMP280();
 //*****************************Mensaje LCD inicio*******************************    
@@ -85,5 +85,14 @@ void main(void)
         __delay_ms(100);
         Led = 0;
         __delay_ms(100);
+        read_xlsb();
+        read_lsb();
+        read_msb();
+        Lcd_pos_x(1);
+        Lcd_Write_Char(xlsb);
+        Lcd_pos_x(3);
+        Lcd_Write_Char(lsb);
+        Lcd_pos_x(5);
+        Lcd_Write_Char(msb);        
     }
 }

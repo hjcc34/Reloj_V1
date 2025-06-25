@@ -27,6 +27,7 @@
 #include "../Altium/../../Librerias/I2C/I2C.X/CFG_I2C.h"
 #include "../../Librerias/DS1307/DS1307.X/CFG_DS1307.h"
 #include "../../Librerias/BMP280.X/CFG_BMP280.h"
+#include "../../Librerias/Conversor_unit.X/CFG_BCD_TO_DEC_TO_BCD.h"
 
 #define SEL_OK          PORTBbits.RB4                                           //Tecla OK 
 #define DEC_2           PORTBbits.RB3                                           //Tecla hacia decremento
