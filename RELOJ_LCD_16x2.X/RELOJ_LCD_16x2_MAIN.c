@@ -84,9 +84,10 @@ void main(void)
         Led = 1;
         __delay_ms(100);
         Led = 0;
-        __delay_ms(100);
-//------------------------------------------------------------------------------        
-        read_lsb();
+        __delay_ms(100);   
+//------------------------------------------------------------------------------
+    I2C_Write(_bmp280_w,_bmp280_temp_msb,_bmp280_r);
+    lsb = I2C_Read_8bits();
         CONVERSOR_HEX_DEC(lsb);
         Lcd_pos_x(1);
         Lcd_Write_Char(unmillar);
