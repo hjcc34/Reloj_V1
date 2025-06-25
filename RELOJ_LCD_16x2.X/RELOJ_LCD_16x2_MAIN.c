@@ -85,14 +85,18 @@ void main(void)
         __delay_ms(100);
         Led = 0;
         __delay_ms(100);
-        read_xlsb();
+//------------------------------------------------------------------------------        
         read_lsb();
-        read_msb();
+        CONVERSOR_HEX_DEC(lsb);
         Lcd_pos_x(1);
-        Lcd_Write_Char(xlsb);
+        Lcd_Write_Char(unmillar);
+        Lcd_pos_x(2);
+        Lcd_Write_Char(millar);
         Lcd_pos_x(3);
-        Lcd_Write_Char(lsb);
+        Lcd_Write_Char(centena);
+        Lcd_pos_x(4);
+        Lcd_Write_Char(decena);
         Lcd_pos_x(5);
-        Lcd_Write_Char(msb);        
+        Lcd_Write_Char(unidad);               
     }
 }

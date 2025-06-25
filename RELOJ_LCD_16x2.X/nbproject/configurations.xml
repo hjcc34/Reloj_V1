@@ -9,6 +9,7 @@
       <itemPath>C:/Mis Proyectos/Librerias/DS1307/DS1307.X/CFG_DS1307.h</itemPath>
       <itemPath>C:/Mis Proyectos/Librerias/I2C/I2C.X/CFG_I2C.h</itemPath>
       <itemPath>C:/Mis Proyectos/Librerias/BMP280.X/CFG_BMP280.h</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/Conversor_unit.X/CFG_BCD_TO_DEC_TO_BCD.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -27,6 +28,7 @@
       <itemPath>C:/Mis Proyectos/Librerias/DS1307/DS1307.X/DS1307.c</itemPath>
       <itemPath>C:/Mis Proyectos/Librerias/Display/LCD_16x2.X/LCD_16x2.c</itemPath>
       <itemPath>C:/Mis Proyectos/Librerias/BMP280.X/BMP280.c</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/Conversor_unit.X/BCD_CONVER.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -38,6 +40,7 @@
     <Elem>C:/Mis Proyectos/Librerias/DS1307/DS1307.X</Elem>
     <Elem>C:/Mis Proyectos/Librerias/I2C/I2C.X</Elem>
     <Elem>C:/Mis Proyectos/Librerias/BMP280.X</Elem>
+    <Elem>C:/Mis Proyectos/Librerias/Conversor_unit.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
