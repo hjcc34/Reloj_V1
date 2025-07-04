@@ -18,6 +18,7 @@
                 <sourceRootElem>C:/Mis Proyectos/Librerias/I2C/I2C.X</sourceRootElem>
                 <sourceRootElem>C:/Mis Proyectos/Librerias/BMP280.X</sourceRootElem>
                 <sourceRootElem>C:/Mis Proyectos/Librerias/Conversor_unit.X</sourceRootElem>
+                <sourceRootElem>C:/Mis Proyectos/Librerias/AHT20.X</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

@@ -10,6 +10,7 @@
       <itemPath>C:/Mis Proyectos/Librerias/I2C/I2C.X/CFG_I2C.h</itemPath>
       <itemPath>C:/Mis Proyectos/Librerias/BMP280.X/CFG_BMP280.h</itemPath>
       <itemPath>C:/Mis Proyectos/Librerias/Conversor_unit.X/CFG_BCD_TO_DEC_TO_BCD.h</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/AHT20.X/AHT20_CFG.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -29,6 +30,7 @@
       <itemPath>C:/Mis Proyectos/Librerias/Display/LCD_16x2.X/LCD_16x2.c</itemPath>
       <itemPath>C:/Mis Proyectos/Librerias/BMP280.X/BMP280.c</itemPath>
       <itemPath>C:/Mis Proyectos/Librerias/Conversor_unit.X/BCD_CONVER.c</itemPath>
+      <itemPath>C:/Mis Proyectos/Librerias/AHT20.X/AHT20.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -41,6 +43,7 @@
     <Elem>C:/Mis Proyectos/Librerias/I2C/I2C.X</Elem>
     <Elem>C:/Mis Proyectos/Librerias/BMP280.X</Elem>
     <Elem>C:/Mis Proyectos/Librerias/Conversor_unit.X</Elem>
+    <Elem>C:/Mis Proyectos/Librerias/AHT20.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
