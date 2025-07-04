@@ -47,7 +47,7 @@ void main(void)
         __delay_ms(3000);
         Lcd_cmd_data(_LCD_CLEAR,cmd,_4bits);        
     }    
-    I2C_Cmd(_Dir_DS1307_W,_Registro_Seg,0x01);                                  //Configurar salida de 1seg el DS1307    
+    I2C_Cmd(_Dir_DS1307_W,_Registro_Seg,0x01);                                  //Configurar salida de 1seg el DS1307     
 //*********************Comunicacion y CFG BMP280********************************
     I2C_Write(_bmp280_w,_bmp280_ID,_bmp280_r);
     if (re == 3)
@@ -67,8 +67,9 @@ void main(void)
     I2C_Cmd(_bmp280_w,_bmp280_reg_reset,_bmp280_reset);
     __delay_ms(2);
     I2C_Cmd(_bmp280_w,_bmp280_ctrl_mes,_mode_sleep);
-    I2C_Cmd(_bmp280_w,_bmp280_CFG,0x00);
-    I2C_Cmd(_bmp280_w,_bmp280_ctrl_mes,0x27);                                   //modo normal-presion_16bits-temperatura_16bits.
+    I2C_Cmd(_bmp280_w,_bmp280_CFG,0x90);
+    I2C_Cmd(_bmp280_w,_bmp280_ctrl_mes,0x63);                                   //modo normal-presion_16bits-temperatura_16bits.
+    __delay_ms(50);
 //*************************Calibracion BMP280***********************************
     CALIBRATION_BMP280();
 //*****************************Mensaje LCD inicio*******************************    
@@ -82,22 +83,23 @@ void main(void)
     while (1)
     {
         Led = 1;
-        __delay_ms(100);
+        __delay_ms(250);
         Led = 0;
-        __delay_ms(100);   
+        __delay_ms(250);   
 //------------------------------------------------------------------------------
-    I2C_Write(_bmp280_w,_bmp280_temp_msb,_bmp280_r);
-    lsb = I2C_Read_8bits();
-        CONVERSOR_HEX_DEC(lsb);
         Lcd_pos_x(1);
-        Lcd_Write_Char(unmillar);
-        Lcd_pos_x(2);
+        Lcd_Write_String("Grados");        
+        CALCULO_BMP280();
+        CONVERSOR_HEX_DEC(temp);
+        Lcd_pos_y(1);
         Lcd_Write_Char(millar);
-        Lcd_pos_x(3);
+        Lcd_pos_y(2);
         Lcd_Write_Char(centena);
-        Lcd_pos_x(4);
+        Lcd_pos_y(3);
+        Lcd_Write_Char('.');
+        Lcd_pos_y(4);
         Lcd_Write_Char(decena);
-        Lcd_pos_x(5);
-        Lcd_Write_Char(unidad);               
+        Lcd_pos_y(5);
+        Lcd_Write_Char(unidad);
     }
 }
