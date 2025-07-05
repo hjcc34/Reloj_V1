@@ -8,11 +8,6 @@
 
 #include "CFG_16F877A.h"
 
-//--------------------------------Interrupcion----------------------------------
-void __interrupt() ISR(void) 
-{
-    
-}
 //------------------------------------------------------------------------------
 //---------------------------Inicio de CFG del micro----------------------------
 //------------------------------------------------------------------------------
@@ -72,6 +67,9 @@ void main(void)
     __delay_ms(50);
 //*************************Calibracion BMP280***********************************
     CALIBRATION_BMP280();
+//***************************AHT20 inicializacion*******************************
+    I2C_Write_AHT20(AHT20_W,AHT20_ini,AHT20_P1);
+    I2C_Write_AHT20(AHT20_W,AHT20_Mes,AHT20_P3);    
 //*****************************Mensaje LCD inicio*******************************    
     Lcd_pos_x(6);                                                               //Ubicar la LCD en posicion 6 de la coordenada X    
     Lcd_Write_String("Reloj");                                                  //Escribir en la LCD "RELOJ"
@@ -101,5 +99,24 @@ void main(void)
         Lcd_Write_Char(decena);
         Lcd_pos_y(5);
         Lcd_Write_Char(unidad);
+        I2C_Check();
+    SSPCON2bits.SEN = 1;                                                        //Activo el start
+    __delay_us(5);
+    while (SSPCON2bits.SEN == 1)                                                //verifico el start
+    {
+    }
+    I2C_Check();                                                                //verifico el bus
+    SSPBUF = 0x71;                                                              //ingreso direccion esclavo
+    while (SSPSTATbits.BF == 1)                                                 //verifico si termino la transmision
+    {
+    }
+    I2C_Check();
+    while (SSPCON2bits.ACKSTAT == 1 && re == 0)                                 //verifico reconocimiento
+    {
+    }
+//******************************************************************************    
+    I2C_Check();     
+        __delay_ms(100);
+        I2C_Read_8bits_6bytes();
     }
 }
