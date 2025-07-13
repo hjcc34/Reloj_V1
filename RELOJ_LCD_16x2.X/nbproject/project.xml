@@ -19,6 +19,12 @@
                 <sourceRootElem>C:/Mis Proyectos/Librerias/BMP280.X</sourceRootElem>
                 <sourceRootElem>C:/Mis Proyectos/Librerias/Conversor_unit.X</sourceRootElem>
                 <sourceRootElem>C:/Mis Proyectos/Librerias/AHT20.X</sourceRootElem>
+                <sourceRootElem>../../Librerias/AHT20.X</sourceRootElem>
+                <sourceRootElem>../../Librerias/Conversor_unit.X</sourceRootElem>
+                <sourceRootElem>../../Librerias/BMP280.X</sourceRootElem>
+                <sourceRootElem>../../Librerias/DS1307/DS1307.X</sourceRootElem>
+                <sourceRootElem>../../Librerias/I2C/I2C.X</sourceRootElem>
+                <sourceRootElem>../../Librerias/Display/LCD_16x2.X</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

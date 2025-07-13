@@ -31,7 +31,6 @@ void main(void)
 //***************************Inicializar I2C************************************
     I2C_Initialize();
 //***********************Comunicacion y CFG DS1307******************************
-    /*
     I2C_Cmd(_Dir_DS1307_W,_Registro_Ctr,_Salida_1seg);                          //Configurar salida de 1seg el DS1307   
     if (re == 3)
     {
@@ -67,8 +66,7 @@ void main(void)
     I2C_Cmd(_bmp280_w,_bmp280_ctrl_mes,0x63);                                   //modo normal-presion_16bits-temperatura_16bits.
     __delay_ms(50);
 //*************************Calibracion BMP280***********************************
-    CALIBRATION_BMP280();
-    */ 
+    CALIBRATION_BMP280(); 
 //***************************AHT20 inicializacion*******************************
     __delay_ms(50);
     ver_cal_AHT20();
@@ -119,7 +117,6 @@ void main(void)
         Lcd_Write_Char(decena);
         Lcd_pos_y(11);
         Lcd_Write_Char(unidad);        
-        /*
         Lcd_pos_x(1);
         Lcd_Write_String("BMP280");        
         CALCULO_BMP280();
@@ -133,7 +130,6 @@ void main(void)
         Lcd_pos_y(4);
         Lcd_Write_Char(decena);
         Lcd_pos_y(5);
-        Lcd_Write_Char(unidad);
-        */ 
+        Lcd_Write_Char(unidad); 
     }
 }

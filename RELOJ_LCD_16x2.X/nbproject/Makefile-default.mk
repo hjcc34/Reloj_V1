@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=RELOJ_LCD_16x2_MAIN.c "C:/Mis Proyectos/Librerias/I2C/I2C.X/I2C.c" "C:/Mis Proyectos/Librerias/DS1307/DS1307.X/DS1307.c" "C:/Mis Proyectos/Librerias/Display/LCD_16x2.X/LCD_16x2.c" "C:/Mis Proyectos/Librerias/BMP280.X/BMP280.c" "C:/Mis Proyectos/Librerias/Conversor_unit.X/BCD_CONVER.c" "C:/Mis Proyectos/Librerias/AHT20.X/AHT20.c"
+SOURCEFILES_QUOTED_IF_SPACED=RELOJ_LCD_16x2_MAIN.c ../../Librerias/AHT20.X/AHT20.c ../../Librerias/Conversor_unit.X/BCD_CONVER.c ../../Librerias/BMP280.X/BMP280.c ../../Librerias/DS1307/DS1307.X/DS1307.c ../../Librerias/I2C/I2C.X/I2C.c ../../Librerias/Display/LCD_16x2.X/LCD_16x2.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 ${OBJECTDIR}/_ext/871039659/I2C.p1 ${OBJECTDIR}/_ext/283620341/DS1307.p1 ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1 ${OBJECTDIR}/_ext/1774415731/BMP280.p1 ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1 ${OBJECTDIR}/_ext/1939770129/AHT20.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1.d ${OBJECTDIR}/_ext/871039659/I2C.p1.d ${OBJECTDIR}/_ext/283620341/DS1307.p1.d ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1.d ${OBJECTDIR}/_ext/1774415731/BMP280.p1.d ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1.d ${OBJECTDIR}/_ext/1939770129/AHT20.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 ${OBJECTDIR}/_ext/1324237433/AHT20.p1 ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1 ${OBJECTDIR}/_ext/625570883/BMP280.p1 ${OBJECTDIR}/_ext/527167381/DS1307.p1 ${OBJECTDIR}/_ext/514101343/I2C.p1 ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1.d ${OBJECTDIR}/_ext/1324237433/AHT20.p1.d ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1.d ${OBJECTDIR}/_ext/625570883/BMP280.p1.d ${OBJECTDIR}/_ext/527167381/DS1307.p1.d ${OBJECTDIR}/_ext/514101343/I2C.p1.d ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 ${OBJECTDIR}/_ext/871039659/I2C.p1 ${OBJECTDIR}/_ext/283620341/DS1307.p1 ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1 ${OBJECTDIR}/_ext/1774415731/BMP280.p1 ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1 ${OBJECTDIR}/_ext/1939770129/AHT20.p1
+OBJECTFILES=${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 ${OBJECTDIR}/_ext/1324237433/AHT20.p1 ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1 ${OBJECTDIR}/_ext/625570883/BMP280.p1 ${OBJECTDIR}/_ext/527167381/DS1307.p1 ${OBJECTDIR}/_ext/514101343/I2C.p1 ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1
 
 # Source Files
-SOURCEFILES=RELOJ_LCD_16x2_MAIN.c C:/Mis Proyectos/Librerias/I2C/I2C.X/I2C.c C:/Mis Proyectos/Librerias/DS1307/DS1307.X/DS1307.c C:/Mis Proyectos/Librerias/Display/LCD_16x2.X/LCD_16x2.c C:/Mis Proyectos/Librerias/BMP280.X/BMP280.c C:/Mis Proyectos/Librerias/Conversor_unit.X/BCD_CONVER.c C:/Mis Proyectos/Librerias/AHT20.X/AHT20.c
+SOURCEFILES=RELOJ_LCD_16x2_MAIN.c ../../Librerias/AHT20.X/AHT20.c ../../Librerias/Conversor_unit.X/BCD_CONVER.c ../../Librerias/BMP280.X/BMP280.c ../../Librerias/DS1307/DS1307.X/DS1307.c ../../Librerias/I2C/I2C.X/I2C.c ../../Librerias/Display/LCD_16x2.X/LCD_16x2.c
 
 
 
@@ -92,114 +92,114 @@ ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1: RELOJ_LCD_16x2_MAIN.c  nbproject/Makefile-$
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1.d 
 	@${RM} ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 RELOJ_LCD_16x2_MAIN.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 RELOJ_LCD_16x2_MAIN.c 
 	@-${MV} ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.d ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/871039659/I2C.p1: C:/Mis\ Proyectos/Librerias/I2C/I2C.X/I2C.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/871039659" 
-	@${RM} ${OBJECTDIR}/_ext/871039659/I2C.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/871039659/I2C.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/871039659/I2C.p1 "C:/Mis Proyectos/Librerias/I2C/I2C.X/I2C.c" 
-	@-${MV} ${OBJECTDIR}/_ext/871039659/I2C.d ${OBJECTDIR}/_ext/871039659/I2C.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/871039659/I2C.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/1324237433/AHT20.p1: ../../Librerias/AHT20.X/AHT20.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1324237433" 
+	@${RM} ${OBJECTDIR}/_ext/1324237433/AHT20.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1324237433/AHT20.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1324237433/AHT20.p1 ../../Librerias/AHT20.X/AHT20.c 
+	@-${MV} ${OBJECTDIR}/_ext/1324237433/AHT20.d ${OBJECTDIR}/_ext/1324237433/AHT20.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1324237433/AHT20.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/283620341/DS1307.p1: C:/Mis\ Proyectos/Librerias/DS1307/DS1307.X/DS1307.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/283620341" 
-	@${RM} ${OBJECTDIR}/_ext/283620341/DS1307.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/283620341/DS1307.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/283620341/DS1307.p1 "C:/Mis Proyectos/Librerias/DS1307/DS1307.X/DS1307.c" 
-	@-${MV} ${OBJECTDIR}/_ext/283620341/DS1307.d ${OBJECTDIR}/_ext/283620341/DS1307.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/283620341/DS1307.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1: ../../Librerias/Conversor_unit.X/BCD_CONVER.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1614743322" 
+	@${RM} ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1 ../../Librerias/Conversor_unit.X/BCD_CONVER.c 
+	@-${MV} ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.d ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/677274316/LCD_16x2.p1: C:/Mis\ Proyectos/Librerias/Display/LCD_16x2.X/LCD_16x2.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/677274316" 
-	@${RM} ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1 "C:/Mis Proyectos/Librerias/Display/LCD_16x2.X/LCD_16x2.c" 
-	@-${MV} ${OBJECTDIR}/_ext/677274316/LCD_16x2.d ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/625570883/BMP280.p1: ../../Librerias/BMP280.X/BMP280.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/625570883" 
+	@${RM} ${OBJECTDIR}/_ext/625570883/BMP280.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/625570883/BMP280.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/625570883/BMP280.p1 ../../Librerias/BMP280.X/BMP280.c 
+	@-${MV} ${OBJECTDIR}/_ext/625570883/BMP280.d ${OBJECTDIR}/_ext/625570883/BMP280.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/625570883/BMP280.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1774415731/BMP280.p1: C:/Mis\ Proyectos/Librerias/BMP280.X/BMP280.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1774415731" 
-	@${RM} ${OBJECTDIR}/_ext/1774415731/BMP280.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1774415731/BMP280.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1774415731/BMP280.p1 "C:/Mis Proyectos/Librerias/BMP280.X/BMP280.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1774415731/BMP280.d ${OBJECTDIR}/_ext/1774415731/BMP280.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1774415731/BMP280.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/527167381/DS1307.p1: ../../Librerias/DS1307/DS1307.X/DS1307.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/527167381" 
+	@${RM} ${OBJECTDIR}/_ext/527167381/DS1307.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/527167381/DS1307.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/527167381/DS1307.p1 ../../Librerias/DS1307/DS1307.X/DS1307.c 
+	@-${MV} ${OBJECTDIR}/_ext/527167381/DS1307.d ${OBJECTDIR}/_ext/527167381/DS1307.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/527167381/DS1307.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1: C:/Mis\ Proyectos/Librerias/Conversor_unit.X/BCD_CONVER.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/2044839580" 
-	@${RM} ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1 "C:/Mis Proyectos/Librerias/Conversor_unit.X/BCD_CONVER.c" 
-	@-${MV} ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.d ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/514101343/I2C.p1: ../../Librerias/I2C/I2C.X/I2C.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/514101343" 
+	@${RM} ${OBJECTDIR}/_ext/514101343/I2C.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/514101343/I2C.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/514101343/I2C.p1 ../../Librerias/I2C/I2C.X/I2C.c 
+	@-${MV} ${OBJECTDIR}/_ext/514101343/I2C.d ${OBJECTDIR}/_ext/514101343/I2C.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/514101343/I2C.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1939770129/AHT20.p1: C:/Mis\ Proyectos/Librerias/AHT20.X/AHT20.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1939770129" 
-	@${RM} ${OBJECTDIR}/_ext/1939770129/AHT20.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1939770129/AHT20.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1939770129/AHT20.p1 "C:/Mis Proyectos/Librerias/AHT20.X/AHT20.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1939770129/AHT20.d ${OBJECTDIR}/_ext/1939770129/AHT20.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1939770129/AHT20.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1: ../../Librerias/Display/LCD_16x2.X/LCD_16x2.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1396320918" 
+	@${RM} ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1 ../../Librerias/Display/LCD_16x2.X/LCD_16x2.c 
+	@-${MV} ${OBJECTDIR}/_ext/1396320918/LCD_16x2.d ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 else
 ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1: RELOJ_LCD_16x2_MAIN.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1.d 
 	@${RM} ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 RELOJ_LCD_16x2_MAIN.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1 RELOJ_LCD_16x2_MAIN.c 
 	@-${MV} ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.d ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/RELOJ_LCD_16x2_MAIN.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/871039659/I2C.p1: C:/Mis\ Proyectos/Librerias/I2C/I2C.X/I2C.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/871039659" 
-	@${RM} ${OBJECTDIR}/_ext/871039659/I2C.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/871039659/I2C.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/871039659/I2C.p1 "C:/Mis Proyectos/Librerias/I2C/I2C.X/I2C.c" 
-	@-${MV} ${OBJECTDIR}/_ext/871039659/I2C.d ${OBJECTDIR}/_ext/871039659/I2C.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/871039659/I2C.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/1324237433/AHT20.p1: ../../Librerias/AHT20.X/AHT20.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1324237433" 
+	@${RM} ${OBJECTDIR}/_ext/1324237433/AHT20.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1324237433/AHT20.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1324237433/AHT20.p1 ../../Librerias/AHT20.X/AHT20.c 
+	@-${MV} ${OBJECTDIR}/_ext/1324237433/AHT20.d ${OBJECTDIR}/_ext/1324237433/AHT20.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1324237433/AHT20.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/283620341/DS1307.p1: C:/Mis\ Proyectos/Librerias/DS1307/DS1307.X/DS1307.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/283620341" 
-	@${RM} ${OBJECTDIR}/_ext/283620341/DS1307.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/283620341/DS1307.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/283620341/DS1307.p1 "C:/Mis Proyectos/Librerias/DS1307/DS1307.X/DS1307.c" 
-	@-${MV} ${OBJECTDIR}/_ext/283620341/DS1307.d ${OBJECTDIR}/_ext/283620341/DS1307.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/283620341/DS1307.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1: ../../Librerias/Conversor_unit.X/BCD_CONVER.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1614743322" 
+	@${RM} ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1 ../../Librerias/Conversor_unit.X/BCD_CONVER.c 
+	@-${MV} ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.d ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1614743322/BCD_CONVER.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/677274316/LCD_16x2.p1: C:/Mis\ Proyectos/Librerias/Display/LCD_16x2.X/LCD_16x2.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/677274316" 
-	@${RM} ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1 "C:/Mis Proyectos/Librerias/Display/LCD_16x2.X/LCD_16x2.c" 
-	@-${MV} ${OBJECTDIR}/_ext/677274316/LCD_16x2.d ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/677274316/LCD_16x2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/625570883/BMP280.p1: ../../Librerias/BMP280.X/BMP280.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/625570883" 
+	@${RM} ${OBJECTDIR}/_ext/625570883/BMP280.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/625570883/BMP280.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/625570883/BMP280.p1 ../../Librerias/BMP280.X/BMP280.c 
+	@-${MV} ${OBJECTDIR}/_ext/625570883/BMP280.d ${OBJECTDIR}/_ext/625570883/BMP280.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/625570883/BMP280.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1774415731/BMP280.p1: C:/Mis\ Proyectos/Librerias/BMP280.X/BMP280.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1774415731" 
-	@${RM} ${OBJECTDIR}/_ext/1774415731/BMP280.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1774415731/BMP280.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1774415731/BMP280.p1 "C:/Mis Proyectos/Librerias/BMP280.X/BMP280.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1774415731/BMP280.d ${OBJECTDIR}/_ext/1774415731/BMP280.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1774415731/BMP280.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/527167381/DS1307.p1: ../../Librerias/DS1307/DS1307.X/DS1307.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/527167381" 
+	@${RM} ${OBJECTDIR}/_ext/527167381/DS1307.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/527167381/DS1307.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/527167381/DS1307.p1 ../../Librerias/DS1307/DS1307.X/DS1307.c 
+	@-${MV} ${OBJECTDIR}/_ext/527167381/DS1307.d ${OBJECTDIR}/_ext/527167381/DS1307.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/527167381/DS1307.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1: C:/Mis\ Proyectos/Librerias/Conversor_unit.X/BCD_CONVER.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/2044839580" 
-	@${RM} ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1 "C:/Mis Proyectos/Librerias/Conversor_unit.X/BCD_CONVER.c" 
-	@-${MV} ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.d ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/2044839580/BCD_CONVER.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/514101343/I2C.p1: ../../Librerias/I2C/I2C.X/I2C.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/514101343" 
+	@${RM} ${OBJECTDIR}/_ext/514101343/I2C.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/514101343/I2C.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/514101343/I2C.p1 ../../Librerias/I2C/I2C.X/I2C.c 
+	@-${MV} ${OBJECTDIR}/_ext/514101343/I2C.d ${OBJECTDIR}/_ext/514101343/I2C.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/514101343/I2C.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/_ext/1939770129/AHT20.p1: C:/Mis\ Proyectos/Librerias/AHT20.X/AHT20.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}/_ext/1939770129" 
-	@${RM} ${OBJECTDIR}/_ext/1939770129/AHT20.p1.d 
-	@${RM} ${OBJECTDIR}/_ext/1939770129/AHT20.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1939770129/AHT20.p1 "C:/Mis Proyectos/Librerias/AHT20.X/AHT20.c" 
-	@-${MV} ${OBJECTDIR}/_ext/1939770129/AHT20.d ${OBJECTDIR}/_ext/1939770129/AHT20.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/_ext/1939770129/AHT20.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1: ../../Librerias/Display/LCD_16x2.X/LCD_16x2.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/_ext/1396320918" 
+	@${RM} ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1.d 
+	@${RM} ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1 ../../Librerias/Display/LCD_16x2.X/LCD_16x2.c 
+	@-${MV} ${OBJECTDIR}/_ext/1396320918/LCD_16x2.d ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/_ext/1396320918/LCD_16x2.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 endif
 
@@ -220,14 +220,14 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 ${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} ${DISTDIR} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.map  -D__DEBUG=1  -mdebugger=pickit3  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -mrom=default,-1f00-1fff -mram=default,-0-0,-70-70,-80-80,-f0-f0,-100-100,-170-170,-180-180,-1e5-1f0  $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.map  -D__DEBUG=1  -mdebugger=none  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto        $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	@${RM} ${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.hex 
 	
 	
 else
 ${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} ${DISTDIR} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.map  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.map  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -O0 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/RELOJ_LCD_16x2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	
 	
 endif
