@@ -82,9 +82,9 @@ void main(void)
     {   
 //------------------------------------------------------------------------------
         Led = 1;
-        __delay_ms(2500);    
+        __delay_ms(250);    
         Led = 0;
-        __delay_ms(2500);
+        __delay_ms(250);
         Lcd_pos_x(8);
         Lcd_Write_String("AHT20");
         mes_AHT20();
