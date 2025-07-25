@@ -68,8 +68,10 @@ void main(void)
 //*************************Calibracion BMP280***********************************
     CALIBRATION_BMP280(); 
 //***************************AHT20 inicializacion*******************************
+    /*
     __delay_ms(50);
     ver_cal_AHT20();
+    */ 
 //*****************************Mensaje LCD inicio*******************************    
     Lcd_pos_x(6);                                                               //Ubicar la LCD en posicion 6 de la coordenada X    
     Lcd_Write_String("Reloj");                                                  //Escribir en la LCD "RELOJ"
@@ -85,6 +87,7 @@ void main(void)
         __delay_ms(250);    
         Led = 0;
         __delay_ms(250);
+        /*
         Lcd_pos_x(8);
         Lcd_Write_String("AHT20");
         mes_AHT20();
@@ -118,6 +121,7 @@ void main(void)
         Lcd_pos_y(11);
         Lcd_Write_Char(unidad);        
         Lcd_pos_x(1);
+        */ 
         Lcd_Write_String("BMP280");        
         CALCULO_BMP280();
         CONVERSOR_HEX_DEC(temp);
