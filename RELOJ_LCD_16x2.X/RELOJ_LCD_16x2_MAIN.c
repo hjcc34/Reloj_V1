@@ -42,7 +42,7 @@ void main(void)
         __delay_ms(3000);
         Lcd_cmd_data(_LCD_CLEAR,cmd,_4bits);        
     }    
-    I2C_Cmd(_Dir_DS1307_W,_Registro_Seg,0x01);                                  //Configurar salida de 1seg el DS1307     
+    I2C_Cmd(_Dir_DS1307_W,_Registro_Seg,0x01);                                  //Configurar salida de 1seg el DS1307       
 //*********************Comunicacion y CFG BMP280********************************
     I2C_Write(_bmp280_w,_bmp280_ID,_bmp280_r);
     if (re == 3)
@@ -84,9 +84,9 @@ void main(void)
     {   
 //------------------------------------------------------------------------------
         Led = 1;
-        __delay_ms(250);    
+        __delay_ms(10);    
         Led = 0;
-        __delay_ms(250);
+        __delay_ms(10);
         /*
         Lcd_pos_x(8);
         Lcd_Write_String("AHT20");
@@ -119,9 +119,9 @@ void main(void)
         Lcd_pos_y(10);
         Lcd_Write_Char(decena);
         Lcd_pos_y(11);
-        Lcd_Write_Char(unidad);        
-        Lcd_pos_x(1);
-        */ 
+        Lcd_Write_Char(unidad);
+        */         
+        Lcd_pos_x(1); 
         Lcd_Write_String("BMP280");        
         CALCULO_BMP280();
         CONVERSOR_HEX_DEC(temp);
