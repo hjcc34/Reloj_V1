@@ -84,9 +84,6 @@ void main(void)
     {   
 //------------------------------------------------------------------------------
         Led = 1;
-        __delay_ms(10);    
-        Led = 0;
-        __delay_ms(10);
         /*
         Lcd_pos_x(8);
         Lcd_Write_String("AHT20");
@@ -121,19 +118,73 @@ void main(void)
         Lcd_pos_y(11);
         Lcd_Write_Char(unidad);
         */         
-        Lcd_pos_x(1); 
-        Lcd_Write_String("BMP280");        
         CALCULO_BMP280();
         CONVERSOR_HEX_DEC(temp);
-        Lcd_pos_y(1);
+        Lcd_pos_x(1);
         Lcd_Write_Char(millar);
-        Lcd_pos_y(2);
+        Lcd_pos_x(2);
         Lcd_Write_Char(centena);
-        Lcd_pos_y(3);
+        Lcd_pos_x(3);
         Lcd_Write_Char('.');
-        Lcd_pos_y(4);
+        Lcd_pos_x(4);
         Lcd_Write_Char(decena);
-        Lcd_pos_y(5);
-        Lcd_Write_Char(unidad); 
+        Lcd_pos_x(5);
+        Lcd_Write_Char(unidad);
+//------------------------------------------------------------------------------        
+        I2C_Write(_Dir_DS1307_W,_Registro_Hor,_Dir_DS1307_R);
+        I2C_Read_8bits();
+        BCD_TO_DEC(SSPBUF);        
+        Lcd_pos_y(9);
+        Lcd_Write_Char(decenas);
+        Lcd_pos_y(10);
+        Lcd_Write_Char(unidades);
+//------------------------------------------------------------------------------        
+        I2C_Write(_Dir_DS1307_W,_Registro_Min,_Dir_DS1307_R);
+        I2C_Read_8bits();
+        BCD_TO_DEC(SSPBUF);
+        Lcd_pos_y(11);
+        Lcd_Write_Char(':');        
+        Lcd_pos_y(12);
+        Lcd_Write_Char(decenas);
+        Lcd_pos_y(13);
+        Lcd_Write_Char(unidades);
+//------------------------------------------------------------------------------        
+        I2C_Write(_Dir_DS1307_W,_Registro_Seg,_Dir_DS1307_R);
+        I2C_Read_8bits();
+        BCD_TO_DEC(SSPBUF);
+        Lcd_pos_y(14);
+        Lcd_Write_Char(':');        
+        Lcd_pos_y(15);
+        Lcd_Write_Char(decenas);
+        Lcd_pos_y(16);
+        Lcd_Write_Char(unidades);
+//------------------------------------------------------------------------------        
+        I2C_Write(_Dir_DS1307_W,_Registro_Dia,_Dir_DS1307_R);
+        I2C_Read_8bits();
+        BCD_TO_DEC(SSPBUF);        
+        Lcd_pos_x(9);
+        Lcd_Write_Char(decenas);
+        Lcd_pos_x(10);
+        Lcd_Write_Char(unidades);
+//------------------------------------------------------------------------------        
+        I2C_Write(_Dir_DS1307_W,_Registro_Mes,_Dir_DS1307_R);
+        I2C_Read_8bits();
+        BCD_TO_DEC(SSPBUF);
+        Lcd_pos_x(11);
+        Lcd_Write_Char('/');        
+        Lcd_pos_x(12);
+        Lcd_Write_Char(decenas);
+        Lcd_pos_x(13);
+        Lcd_Write_Char(unidades);
+//------------------------------------------------------------------------------        
+        I2C_Write(_Dir_DS1307_W,_Registro_Ano,_Dir_DS1307_R);
+        I2C_Read_8bits();
+        BCD_TO_DEC(SSPBUF);
+        Lcd_pos_x(14);
+        Lcd_Write_Char('/');        
+        Lcd_pos_x(15);
+        Lcd_Write_Char(decenas);
+        Lcd_pos_x(16);
+        Lcd_Write_Char(unidades);         
     }
 }
