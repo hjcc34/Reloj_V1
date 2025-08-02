@@ -25,6 +25,7 @@
                 <sourceRootElem>../../Librerias/DS1307/DS1307.X</sourceRootElem>
                 <sourceRootElem>../../Librerias/I2C/I2C.X</sourceRootElem>
                 <sourceRootElem>../../Librerias/Display/LCD_16x2.X</sourceRootElem>
+                <sourceRootElem>../../Librerias/RS_232.X</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>
