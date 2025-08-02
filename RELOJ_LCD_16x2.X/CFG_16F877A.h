@@ -30,6 +30,7 @@
 #include "../../Librerias/Conversor_unit.X/CFG_BCD_TO_DEC_TO_BCD.h"
 #include "../../Librerias/AHT20.X/AHT20_CFG.h"
 #include "../../Librerias/RS_232.X/CFG_RS232.h"
+#include "../../Librerias/DHT11.X/CFG_DHT11.h"
 
 #define SEL_OK          PORTBbits.RB4                                           //Tecla OK 
 #define DEC_2           PORTBbits.RB3                                           //Tecla hacia decremento

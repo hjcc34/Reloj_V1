@@ -12,6 +12,7 @@
       <itemPath>../../Librerias/DS1307/DS1307.X/CFG_DS1307.h</itemPath>
       <itemPath>../../Librerias/I2C/I2C.X/CFG_I2C.h</itemPath>
       <itemPath>../../Librerias/RS_232.X/CFG_RS232.h</itemPath>
+      <itemPath>../../Librerias/DHT11.X/CFG_DHT11.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -33,6 +34,7 @@
       <itemPath>../../Librerias/I2C/I2C.X/I2C.c</itemPath>
       <itemPath>../../Librerias/Display/LCD_16x2.X/LCD_16x2.c</itemPath>
       <itemPath>../../Librerias/RS_232.X/RS-232.c</itemPath>
+      <itemPath>../../Librerias/DHT11.X/DHT11.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -53,6 +55,7 @@
     <Elem>../../Librerias/I2C/I2C.X</Elem>
     <Elem>../../Librerias/Display/LCD_16x2.X</Elem>
     <Elem>../../Librerias/RS_232.X</Elem>
+    <Elem>../../Librerias/DHT11.X</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
