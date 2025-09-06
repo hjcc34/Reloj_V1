@@ -4,6 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/E:/Mis%20Proyectos/Reloj_V1/RELOJ_LCD_16x2.X/RELOJ_LCD_16x2_MAIN.c</file>
+            <file>file:/E:/Mis%20Proyectos/Reloj_V1/RELOJ_LCD_16x2.X/CFG_PIC16F877A.h</file>
+            <file>file:/E:/Mis%20Proyectos/Librerias/AHT20.X/AHT20_CFG.h</file>
+            <file>file:/E:/Mis%20Proyectos/Librerias/AHT20.X/AHT20.c</file>
         </group>
     </open-files>
 </project-private>

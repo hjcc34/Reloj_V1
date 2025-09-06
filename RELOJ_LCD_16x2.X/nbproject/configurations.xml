@@ -4,7 +4,6 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>CFG_16F877A.h</itemPath>
       <itemPath>../../Librerias/Display/LCD_16x2.X/CFG_LCD_16x2.h</itemPath>
       <itemPath>../../Librerias/AHT20.X/AHT20_CFG.h</itemPath>
       <itemPath>../../Librerias/BMP280.X/CFG_BMP280.h</itemPath>
@@ -13,6 +12,7 @@
       <itemPath>../../Librerias/I2C/I2C.X/CFG_I2C.h</itemPath>
       <itemPath>../../Librerias/RS_232.X/CFG_RS232.h</itemPath>
       <itemPath>../../Librerias/DHT11.X/CFG_DHT11.h</itemPath>
+      <itemPath>CFG_PIC16F877A.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

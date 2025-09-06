@@ -2,7 +2,7 @@
  * File:   CFG_16F877A.h
  * Author: Familia CS
  *
- * Created on 11 de abril de 2025, 21:40
+ * Created on May 14, 2023, 10:09 AM
  */
 
 #ifndef CFG16F877A_H
@@ -23,14 +23,14 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "../../Librerias/Display/LCD_16x2.X/CFG_LCD_16x2.h"
-#include "../Altium/../../Librerias/I2C/I2C.X/CFG_I2C.h"
-#include "../../Librerias/DS1307/DS1307.X/CFG_DS1307.h"
-#include "../../Librerias/BMP280.X/CFG_BMP280.h"
-#include "../../Librerias/Conversor_unit.X/CFG_BCD_TO_DEC_TO_BCD.h"
 #include "../../Librerias/AHT20.X/AHT20_CFG.h"
-#include "../../Librerias/RS_232.X/CFG_RS232.h"
+#include "../../Librerias/Conversor_unit.X/CFG_BCD_TO_DEC_TO_BCD.h"
+#include "../../Librerias/BMP280.X/CFG_BMP280.h"
 #include "../../Librerias/DHT11.X/CFG_DHT11.h"
+#include "../../Librerias/DS1307/DS1307.X/CFG_DS1307.h"
+#include "../../Librerias/I2C/I2C.X/CFG_I2C.h"
+#include "../../Librerias/Display/LCD_16x2.X/CFG_LCD_16x2.h"
+#include "../../Librerias/RS_232.X/CFG_RS232.h"
 
 #define SEL_OK          PORTBbits.RB4                                           //Tecla OK 
 #define DEC_2           PORTBbits.RB3                                           //Tecla hacia decremento
